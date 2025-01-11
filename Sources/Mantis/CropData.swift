@@ -43,15 +43,15 @@ struct CropState: Equatable {
 }
 
 public struct Transformation: Equatable {
-    var offset: CGPoint
-    var rotation: CGFloat
-    var scale: CGFloat
-    var isManuallyZoomed: Bool
-    var initialMaskFrame: CGRect
-    var maskFrame: CGRect
-    var cropWorkbenchViewBounds: CGRect
-    var horizontallyFlipped: Bool
-    var verticallyFlipped: Bool
+    public var offset: CGPoint
+    public var rotation: CGFloat
+    public var scale: CGFloat
+    public var isManuallyZoomed: Bool
+    public var initialMaskFrame: CGRect
+    public var maskFrame: CGRect
+    public var cropWorkbenchViewBounds: CGRect
+    public var horizontallyFlipped: Bool
+    public var verticallyFlipped: Bool
     
     public init(offset: CGPoint, rotation: CGFloat, scale: CGFloat, isManuallyZoomed: Bool, initialMaskFrame: CGRect, maskFrame: CGRect, cropWorkbenchViewBounds: CGRect, horizontallyFlipped: Bool, verticallyFlipped: Bool) {
         self.offset = offset
